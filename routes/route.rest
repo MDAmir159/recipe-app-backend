@@ -1,0 +1,41 @@
+GET http://localhost:3000/subscriber
+
+###
+GET http://localhost:3000/subscriber/624f1b334532f1cd1a01240f
+
+###
+POST http://localhost:3000/subscriber
+Content-Type: application/json
+
+{
+    "name" : "Alkatraz",
+    "subscriberToChannel" : "Hell CAT lovers. I love you all"
+}
+
+
+###
+PATCH http://localhost:3000/subscriber/624f1b334532f1cd1a01240f
+Content-Type: application/json
+
+{
+    "name" : "New ne ewwwww",
+    "subscriberToChannel" : "Hell CAT lover"
+}
+
+###
+DELETE http://localhost:3000/subscriber/623d7787de53afd4b35d1b80
+
+###
+GET http://localhost:3000/ingradients/all_ingradients
+
+###
+POST http://localhost:3000/ingradients/new_ingradients
+Content-Type: application/json
+
+{
+    "name" : "Alkatraz",
+    "image" : "https://unsplash.com/photos/doeWwiscUPI"
+}
+
+###
+GET http://localhost:3000/welcome
